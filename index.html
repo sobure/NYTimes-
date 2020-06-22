@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>New York Times Article Sear</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="container text-center">
+        <div class="row" id="header-name">New York Times Search</div>
+    </div>
+
+
+    <div class="container" id="searchParameters">
+        <h3>Search Parameters</h3>
+        <br>
+        <form>
+            <label for="search-term">Search Term:</label>
+            <input type="text" id=search-term>
+          
+            <br>
+            
+            <label for="number-records">Number of Records to Retrieve:</label>
+            <input list = "numbers" type = "text">
+             <select id = "Numbers">
+              <option value="5">5</option>
+              <option value="10">10</option>
+              <option value="15">15</option> 
+             </select> 
+                  
+
+
+            <!-- <input type ="submit" value="Submit">  -->
+            
+            <br>
+            <label for = "star-year">Start Year (Optional):</label> 
+            <input type ="text" id =star-year> 
+            <br>
+            <label for = "end-year">End Year (Optional):</label> 
+            <input type ="text" id =end-year> 
+        </form>
+        <br>
+        
+        <button type = "search" value ="Search">Search</button>
+        <button type="reset" value="Reset">Clear</button>
+    </div>
+    <br>
+    <div class="container" id="topArticles">
+     <footer id ="top-articles"></footer>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+    src="https://code.jquery.com/jquery-3.5.1.js"
+    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+  
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!-- custom JS -->
+    <script src="/Assets/script.js"></script>
+    
+  </body>
+</html>
